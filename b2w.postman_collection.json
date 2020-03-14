@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "6885b704-3929-49cb-8c0c-1a3155969e89",
+		"name": "b2w",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://b2w-api.herokuapp.com/api/v1/planets/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Alderaan",
+							"type": "text"
+						},
+						{
+							"key": "climate",
+							"value": "arid",
+							"type": "text"
+						},
+						{
+							"key": "terrain",
+							"value": "desert",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://b2w-api.herokuapp.com/api/v1/planets/",
+					"protocol": "https",
+					"host": [
+						"b2w-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"planets",
+						""
+					]
+				},
+				"description": "POST"
+			},
+			"response": []
+		},
+		{
+			"name": "https://b2w-api.herokuapp.com/api/v1/planets/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Dagobah",
+							"type": "text"
+						},
+						{
+							"key": "climate",
+							"value": "murky",
+							"type": "text"
+						},
+						{
+							"key": "terrain",
+							"value": "swamp, jungles",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://b2w-api.herokuapp.com/api/v1/planets/",
+					"protocol": "https",
+					"host": [
+						"b2w-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"planets",
+						""
+					]
+				},
+				"description": "GET PLANETS"
+			},
+			"response": []
+		},
+		{
+			"name": "https://b2w-api.herokuapp.com/api/v1/planets/1/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Dagobah",
+							"type": "text"
+						},
+						{
+							"key": "climate",
+							"value": "murky",
+							"type": "text"
+						},
+						{
+							"key": "terrain",
+							"value": "swamp, jungles",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://b2w-api.herokuapp.com/api/v1/planets/1/",
+					"protocol": "https",
+					"host": [
+						"b2w-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"planets",
+						"1",
+						""
+					]
+				},
+				"description": "GET PLANET BY ID"
+			},
+			"response": []
+		},
+		{
+			"name": "https://b2w-api.herokuapp.com/api/v1/planets/?name=Yavin+IV",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Dagobah",
+							"type": "text"
+						},
+						{
+							"key": "climate",
+							"value": "murky",
+							"type": "text"
+						},
+						{
+							"key": "terrain",
+							"value": "swamp, jungles",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://b2w-api.herokuapp.com/api/v1/planets/?name=Yavin+IV",
+					"protocol": "https",
+					"host": [
+						"b2w-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"planets",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Yavin+IV"
+						}
+					]
+				},
+				"description": "GET PLANET BY NAME"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
